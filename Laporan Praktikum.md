@@ -767,3 +767,155 @@ Terdapat dua fungsi: buatSimpul untuk membuat dan menginisialisasi sebuah simpul
 
 **BAGIAN 3**
 ```C++
+void preOrder(Pohon* root) {
+    if (root != NULL) {
+        cout << root->data << " ";
+        preOrder(root->kiri);
+        preOrder(root->kanan);
+    }
+}
+
+void inOrder(Pohon* root) {
+    if (root != NULL) {
+        inOrder(root->kiri);
+        cout << root->data << " ";
+        inOrder(root->kanan);
+    }
+}
+
+void postOrder(Pohon* root) {
+    if (root != NULL) {
+        postOrder(root->kiri);
+        postOrder(root->kanan);
+        cout << root->data << " ";
+    }
+}
+```
+Interpretasi :
+
+Kode tersebut mencakup tiga fungsi penelusuran pohon biner: `preOrder`, `inOrder`, dan `postOrder`. Fungsi `preOrder` melakukan penelusuran dalam urutan "akar-kiri-kanan", sementara `inOrder` menelusuri pohon dalam urutan "kiri-akar-kanan", dan `postOrder` dalam urutan "kiri-kanan-akar". Setiap fungsi memproses simpul saat ini terlebih dahulu, kemudian menelusuri anak kiri, dan akhirnya anak kanan secara rekursif. Dengan menggunakan fungsi-fungsi ini, Anda dapat melakukan penelusuran pohon biner dalam berbagai urutan yang berbeda, sesuai dengan kebutuhan aplikasi.
+
+**BAGIAN 4**
+```C++
+int main() {
+    Pohon* root = NULL;
+    int choice, data;
+
+    do {
+        cout << "\nMenu:\n";
+        cout << "1. Masukkan data ke dalam tree\n";
+        cout << "2. Tampilkan tree dalam Pre-Order\n";
+        cout << "3. Tampilkan tree dalam In-Order\n";
+        cout << "4. Tampilkan tree dalam Post-Order\n";
+        cout << "5. Keluar\n";
+        cout << "Pilihan Anda: ";
+        cin >> choice;
+
+        switch (choice) {
+            case 1:
+                cout << "Masukkan data: ";
+                cin >> data;
+                root = masukkanData(root, data);
+                break;
+            case 2:
+                cout << "Pre-Order Traversal: ";
+                preOrder(root);
+                cout << endl;
+                break;
+            case 3:
+                cout << "In-Order Traversal: ";
+                inOrder(root);
+                cout << endl;
+                break;
+            case 4:
+                cout << "Post-Order Traversal: ";
+                postOrder(root);
+                cout << endl;
+                break;
+            case 5:
+                cout << "Terima kasih!\n";
+                break;
+            default:
+                cout << "Pilihan tidak valid!\n";
+        }
+    } while (choice != 5);
+
+    return 0;
+}
+```
+Interpretasi :
+
+fungsi main, sebuah menu interaktif ditampilkan kepada pengguna yang memungkinkannya untuk melakukan berbagai operasi pada pohon biner. Pengguna dapat memilih untuk: (1) memasukkan data ke dalam pohon, (2) menampilkan pohon dalam urutan pre-order, (3) menampilkan pohon dalam urutan in-order, (4) menampilkan pohon dalam urutan post-order, atau (5) keluar dari program. Setiap pilihan menu dijalankan dengan melakukan panggilan ke fungsi-fungsi terkait: masukkanData untuk memasukkan data, dan preOrder, inOrder, dan postOrder untuk menampilkan pohon dalam urutan yang sesuai. Program akan terus berjalan dan menampilkan menu hingga pengguna memilih untuk keluar dengan memilih opsi keluar (pilihan 5).
+
+### HASIL OUTPUT
+```C++
+Menu:
+1. Masukkan data ke dalam tree
+2. Tampilkan tree dalam Pre-Order
+3. Tampilkan tree dalam In-Order
+4. Tampilkan tree dalam Post-Order
+5. Keluar
+Pilihan Anda: 1
+Masukkan data: 20
+
+Menu:
+1. Masukkan data ke dalam tree
+2. Tampilkan tree dalam Pre-Order
+3. Tampilkan tree dalam In-Order
+4. Tampilkan tree dalam Post-Order
+5. Keluar
+Pilihan Anda: 1
+Masukkan data: 3
+
+Menu:
+1. Masukkan data ke dalam tree
+2. Tampilkan tree dalam Pre-Order
+3. Tampilkan tree dalam In-Order
+4. Tampilkan tree dalam Post-Order
+5. Keluar
+Pilihan Anda: 1
+Masukkan data: 6
+
+Menu:
+1. Masukkan data ke dalam tree
+2. Tampilkan tree dalam Pre-Order
+3. Tampilkan tree dalam In-Order
+4. Tampilkan tree dalam Post-Order
+5. Keluar
+Pilihan Anda: 2
+Pre-Order Traversal: 20 3 6
+
+Menu:
+1. Masukkan data ke dalam tree
+2. Tampilkan tree dalam Pre-Order
+3. Tampilkan tree dalam In-Order
+4. Tampilkan tree dalam Post-Order
+5. Keluar
+Pilihan Anda: 3
+In-Order Traversal: 3 6 20
+
+Menu:
+1. Masukkan data ke dalam tree
+2. Tampilkan tree dalam Pre-Order
+3. Tampilkan tree dalam In-Order
+4. Tampilkan tree dalam Post-Order
+5. Keluar
+Pilihan Anda: 4
+Post-Order Traversal: 6 3 20
+
+Menu:
+1. Masukkan data ke dalam tree
+2. Tampilkan tree dalam Pre-Order
+3. Tampilkan tree dalam In-Order
+4. Tampilkan tree dalam Post-Order
+5. Keluar
+Pilihan Anda: 5
+Terima kasih!
+
+--------------------------------
+Process exited after 30 seconds with return value 0
+Press any key to continue . . .
+```
+
+**DAFTAR PUSTAKA**
+
