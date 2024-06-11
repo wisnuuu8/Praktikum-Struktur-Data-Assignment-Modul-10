@@ -4,7 +4,7 @@
 
 **LATAR BELAKANG**
 
-Graph dan tree adalah struktur data fundamental dalam ilmu komputer. Graph terdiri dari simpul (nodes) dan sisi (edges), sementara tree adalah bentuk khusus dari graph yang tidak memiliki siklus dan memiliki struktur hirarki dengan satu simpul akar (root). Pemahaman terhadap graph dan tree sangat penting karena sering digunakan dalam algoritma dan aplikasi, membantu memecahkan masalah kompleks, serta meningkatkan keterampilan pemrograman mahasiswa dengan pemahaman yang lebih baik tentang algoritma dan efisiensi kode. 
+Graph dan tree adalah struktur data fundamental dalam ilmu komputer. Graph terdiri dari simpul (nodes) dan sisi (edges), sementara tree adalah bentuk khusus dari graph yang tidak memiliki siklus dan memiliki struktur hirarki dengan satu simpul akar (root). Pemahaman terhadap graph dan tree sangat penting karena sering digunakan dalam algoritma dan aplikasi, membantu memecahkan masalah kompleks, serta meningkatkan keterampilan pemrograman mahasiswa dengan pemahaman yang lebih baik tentang algoritma dan efisiensi kode [1]. 
 
 Aplikasi nyata dari graph meliputi jaringan sosial, jaringan komputer, dan pemetaan rute, sedangkan tree digunakan dalam sistem file, struktur organisasi, serta algoritma pencarian dan pengurutan. Namun, memahami konsep abstrak dari graph dan tree bisa menjadi tantangan, seperti menulis kode implementasi yang efisien dan menghubungkan teori dengan aplikasi dunia nyata. 
 
@@ -29,7 +29,7 @@ pemrograman
 **DASAR TEORI**
 
 #### Graph
-Graph adalah struktur data yang merepresentasikan hubungan antara objek dalam bentuk node (simpul) dan edge (sisi). Secara matematis, graph dinyatakan sebagai G = (V, E), dimana V adalah himpunan simpul dan E adalah himpunan sisi. Graph dapat digunakan dalam berbagai aplikasi seperti jaringan sosial, pemetaan jalan, dan pemodelan data.
+Graph adalah struktur data yang merepresentasikan hubungan antara objek dalam bentuk node (simpul) dan edge (sisi)[2]. Secara matematis, graph dinyatakan sebagai G = (V, E), dimana V adalah himpunan simpul dan E adalah himpunan sisi. Graph dapat digunakan dalam berbagai aplikasi seperti jaringan sosial, pemetaan jalan, dan pemodelan data.
 
 Jenis-jenis graph meliputi:
 - **Directed Graph**: Graph berarah, dimana urutan simpul pada setiap sisi memiliki arti.
@@ -39,7 +39,7 @@ Jenis-jenis graph meliputi:
 Graph dapat direpresentasikan menggunakan matriks atau linked list. Pemahaman perbedaan antara simpul vertex dan simpul edge penting dalam representasi graph.
 
 #### Tree
-Tree adalah struktur data yang menyerupai pohon nyata, terdiri dari node yang terhubung dalam sebuah hierarki. Setiap node memiliki satu simpul induk dan nol atau lebih simpul anak. Tree digunakan untuk menyimpan data hierarki seperti pohon keluarga, struktur organisasi, dan skema pertandingan.
+Tree adalah struktur data yang menyerupai pohon nyata, terdiri dari node yang terhubung dalam sebuah hierarki. Setiap node memiliki satu simpul induk dan nol atau lebih simpul anak. Tree digunakan untuk menyimpan data hierarki seperti pohon keluarga, struktur organisasi, dan skema pertandingan [3].
 
 **Binary Tree** adalah jenis tree dimana setiap simpul memiliki maksimal dua anak. Operasi dasar pada tree meliputi pembuatan (create), pengosongan (clear), pengecekan kekosongan (isEmpty), penyisipan (insert), pencarian (find), pembaruan (update), pengambilan (retrieve), penghapusan subtree (delete sub), dan karakteristik (characteristic). Metode traversal pada tree mencakup pre-order, in-order, dan post-order, yang menentukan urutan kunjungan simpul-simpul dalam tree.
 
@@ -918,4 +918,10 @@ Press any key to continue . . .
 ```
 
 **DAFTAR PUSTAKA**
+
+Lailiyah, S., Kusaeri, K., & Rizki, W. Y. (2020). Identifikasi proses berpikir siswa dalam menyelesaikan masalah aljabar dengan menggunakan representasi graf. Jurnal Riset Pendidikan Matematika, 7(1), 24–45. https://doi.org/10.21831/jrpm.v7i1.32257
+
+Meilina, P. (2015). Penerapan Data Mining dengan Metode Klasifikasi Menggunakan Decision Tree dan Regresi. Jurnal Teknologi Universitas Muhammadiyah Jakarta, 7(1), 11–20. jurnal.ftumj.ac.id/index.php/jurtek
+
+Nugraha, D. W. (2011). Aplikasi Algoritma Prim untuk Menentukan Minimum Spanning Tree Suatu Graf Berbobot Berorientasi Objek. Teknik Elektro UNTAD Palu, 1(2), 70–79. deny_wiria_nugraha@yahoo.co.id
 
